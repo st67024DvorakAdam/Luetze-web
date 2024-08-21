@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lütze s.r.o.</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: 'Luetze02';
+            src: url('fonts/Luetze02.ttf') format('truetype');
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="social-buttons">
+        <a href="https://www.facebook.com/LuetzeSolutions" class="social-button facebook" target="_blank" title="Facebook"></a>
+        <a href="https://www.linkedin.com/company/lutzeinc" class="social-button linkedin" target="_blank" title="LinkedIn"></a>
+        <a href="https://x.com/LuetzeSolutions" class="social-button x" target="_blank" title="X"></a>
+        <a href="https://www.youtube.com/user/LuetzeSolutions" class="social-button youtube" target="_blank" title="YouTube"></a>
+    </div>
+    
+    <div class="container">
+        <div class="overlay"></div>
+        <div class="video-container">
+            <img id="placeholderImage" src="pictures/pic2.jpg" alt="Placeholder Image">
+            <div id="moto">
+                <!-- <div id="moto1">LÜTZE</div> -->
+                TECHNIKA KTERÁ MÁ SYSTÉM
+            </div>
+            <div class="main-buttons">
+                <button class="cta-button" onclick="scrollToSection('vyrobni-zamereni')">Co vyrábíme</button>
+                <button class="cta2-button">Poptat výrobu</button>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="logo">L</div>
+            <ul class="menu">
+                <li><a href="#vyrobni-zamereni" class="active">Výrobní zaměření</a></li>
+                <li><a href="#o-spolecnosti">O společnosti</a></li>
+                <li><a href="#kariera">Kariéra</a></li>
+                <li><a href="#technologie-a-kvalita">Technologie a kvalita</a></li>
+                <li><a href="#certifikace">Certifikace</a></li>
+                <li><a href="#kontakty">Kontakty</a></li>
+            </ul>
+            <ul class="language">
+                <li><a href="#cs" class="active">CS</a></li>
+                <li><a href="#en">EN</a></li>
+                <li><a href="#de">DE</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#vyrobni-zamereni">Výrobní zaměření</a>
+            <a href="#o-spolecnosti">O společnosti</a>
+            <a href="#kariera">Kariéra</a>
+            <a href="#technologie-a-kvalita">Technologie a kvalita</a>
+            <a href="#certifikace">Certifikace</a>
+            <a href="#kontakty">Kontakty</a>
+            <div class="language">
+                <a href="#cs">CS</a>
+                <a href="#en">EN</a>
+                <a href="#de">DE</a>
+            </div>
+        </div>
+    </div>
+     <!-- Sekce "Výrobní zaměření" -->
+     <section id="vyrobni-zamereni" class="section-content">
+        <h2>Výrobní zaměření</h2>
+        <p>Vyrábíme kabelové svazky a kabelové systémy. Naše elektrovýroba se specializuje na ruční osazování DPS, pájení a krimpování za využití nejnovějších technologií. Naše produkty prochází testováním kvality.</p>
+        <span class="categories">
+            <div class="category konfekce">
+                
+                <h3>Kabelová konfekce</h3>
+                <ul>
+                    <li>Kusová, malo a středně sériová výroba podle požadavků zákazníka</li>
+                    <li>Zpracování jednožilových vodičů</li>
+                    <li>Zpracování kabelů</li>
+                    <li>Výroba kabelových svazků</li>
+                    <li>Zakázkové řezání vodičů a kabelů</li>
+                </ul>
+            </div>
+
+            <div class="category elektro">
+                <h3>Elektrovýroba</h3>
+                <ul>
+                    <li>Malo a středně sériová výroba podle požadavků zákazníka</li>
+                    <li>SMD osazování malých sérií</li>
+                    <li>THT osazování</li>
+                    <li>Strojní zalévání sestav</li>
+                    <li>Malé elektromontáže a kompletace</li>
+                </ul>
+            </div>
+
+            <div class="category frames">
+                <h3>Rozvaděčové rámy</h3>
+                <ul>
+                    <li>Montáž rozvaděčových rámů</li>
+                    <li>Osazování</li>
+                    <li>Příprava kabeláže</li>
+                </ul>
+            </div>
+        </span>
+    </section>
+    <script>
+        function toggleMenu() {
+            var mobileMenu = document.getElementById('mobileMenu');
+            if (mobileMenu.style.display === 'flex') {
+                mobileMenu.style.display = 'none';
+            } else {
+                mobileMenu.style.display = 'flex';
+            }            
+        }
+
+
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

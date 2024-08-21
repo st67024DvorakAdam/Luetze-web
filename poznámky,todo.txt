@@ -1,0 +1,12 @@
+nejde označování položek v menu, nesynchronizuje se to mezi pc a mobil verzí
+
+přidat ikony
+
+nastylovat divy category
+
+udělat dole záhlaví
+
+jazyky
+
+ještě nejaká kategorie
+....
